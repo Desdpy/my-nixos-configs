@@ -22,6 +22,6 @@
     ./programs/protonmail-bridge-gui.nix
     ./programs/foot.nix
     ./programs/gnome-disk-utility.nix
-    ./programs/simple-scan.nix
+    ./programs/skanpage.nix
   ];
 }
