@@ -9,7 +9,4 @@
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
     konsole
   ];
-
-  # Include KDE packages
-  programs.partition-manager.enable = true;
 }
