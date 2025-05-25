@@ -7,6 +7,8 @@
       "input" 
       "networkmanager" 
       "libvirtd" # Enable virtualisation for virt-manager
+      "scanner" # For scanning documents
+      "lp" # For printing documents
     ]; 
   };
 }

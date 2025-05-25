@@ -12,6 +12,9 @@
     # network
     ./networking/networkmanager.nix
 
+    # hardware
+    ./hardware/sane.nix
+
     # services
     ./services/keymap-de.nix
     ./services/pipewire.nix
@@ -20,6 +23,7 @@
     ./services/plasma6.nix
     ./services/gnome-keyring.nix
     ./services/tailscale.nix
+    ./services/printing.nix
 
     # fonts
     ./fonts/nerdfonts.nix
