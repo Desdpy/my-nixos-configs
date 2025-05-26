@@ -13,7 +13,6 @@
     ./programs/vscode.nix
     ./programs/protonvpn-gui.nix
     ./programs/brave.nix
-    ./programs/mullvad-browser.nix
     ./programs/fastfetch.nix
     ./programs/tree.nix
     ./programs/vesktop.nix

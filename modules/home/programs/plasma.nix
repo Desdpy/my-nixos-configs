@@ -260,6 +260,9 @@
       # Apps & Windows -> Default Applications -> Default Applications
       "kdeglobals"."General"."TerminalApplication" = "foot";
       "kdeglobals"."General"."TerminalService" = "foot.desktop";
+
+      # Disable browser integration reminder
+      "kded5rc"."Module-browserintegrationreminder"."autoload" = false;
       
     };
 
