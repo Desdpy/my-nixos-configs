@@ -11,6 +11,7 @@
     ../../modules/nixos/yubikeys.nix   # Only use with u2f_keys file! + indirectly locks root user :)
     ../../modules/nixos/virtual-machines.nix   # Add libvirtd to usergroups!
     ../../modules/nixos/hardware/bluetooth.nix
+    ../../modules/nixos/swapDevices/16GiB.nix
   ];
 
   # Define your hostname.

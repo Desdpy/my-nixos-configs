@@ -11,7 +11,7 @@
       lookAndFeel = "Catppuccin-Frappe-Blue";
 
       # Appearance & Style -> Wallpaper
-      wallpaper = ../../../wallpapers/catppuccin_walls/wallpapers_png/whoami.png;
+      wallpaper = ../../../wallpapers/river-city.jpg;
 
     };
 
@@ -198,7 +198,7 @@
     kscreenlocker = {
       lockOnResume = true;
       timeout = 15;
-      appearance.wallpaper = ../../../wallpapers/catppuccin_walls/wallpapers_png/whoami_blured.png;
+      appearance.wallpaper = ../../../wallpapers/river-city.jpg;
     };
 
     # Apps & Windows -> Window Management -> Window Rules
@@ -238,21 +238,21 @@
 
       # Apps & Windows -> Window Management -> KWin Scripts -> Krohnkite
       "kwinrc"."Plugins"."krohnkiteEnabled" = true;
+      "kwinrc"."Script-krohnkite"."screenGapBetween" = 8;
       "kwinrc"."Script-krohnkite"."screenGapBottom" = 8;
       "kwinrc"."Script-krohnkite"."screenGapLeft" = 8;
       "kwinrc"."Script-krohnkite"."screenGapRight" = 8;
       "kwinrc"."Script-krohnkite"."screenGapTop" = 50;
-      "kwinrc"."Script-krohnkite"."tileLayoutGap" = 8;
 
       # Apps & Windows -> Window Management -> Desdktop Effects -> Geometry Change
       "kwinrc"."Plugins"."kwin4_effect_geometry_changeEnabled" = true;
 
       # Apps & Windows -> Window Management -> Desdktop Effects -> Rounded Corners
-      "kwinrc"."Round-Corners"."InactiveOutlineColor" = "48,52,70";
+      "kwinrc"."Round-Corners"."InactiveOutlineColor" = "46,50,68";
       "kwinrc"."Round-Corners"."InactiveOutlineThickness" = 2.5;
       "kwinrc"."Round-Corners"."InactiveSecondOutlineColor" = "29,29,45";
       "kwinrc"."Round-Corners"."InactiveSecondOutlineThickness" = 4.25;
-      "kwinrc"."Round-Corners"."OutlineColor" = "221,161,201";
+      "kwinrc"."Round-Corners"."OutlineColor" = "201,157,230";
       "kwinrc"."Round-Corners"."OutlineThickness" = 2.5;
       "kwinrc"."Round-Corners"."SecondOutlineColor" = "29,29,44";
       "kwinrc"."Round-Corners"."SecondOutlineThickness" = 4.25;

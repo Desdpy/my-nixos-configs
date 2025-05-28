@@ -6,7 +6,7 @@
   environment.systemPackages = [
     (pkgs.writeTextDir "share/sddm/themes/breeze/theme.conf.user" ''
       [General]
-      background=${../../../wallpapers/catppuccin_walls/wallpapers_png/whoami_blured.png}
+      background=${../../../wallpapers/river-city.jpg}
     '')
   ];
 
