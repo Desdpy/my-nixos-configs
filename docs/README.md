@@ -89,11 +89,6 @@ logout
 Login as the user now.
 
 ### Setup git
-check the ip of the new system with:
-```
-ifconfig
-```
-\
 ssh into it. You might have to remove it from the known hosts from the system you are sshing from.
 ```
 ssh <username>@<ip>
