@@ -123,6 +123,7 @@ git clone git@github.com:DesolateDependency/my-nixos-configs.git nix
 Copy the hardware-configuration.nix file that was generated for this system into the .nixconfigs directory
 ```
 cp /etc/nixos/hardware-configuration.nix ~/nix/hosts/<host-name>/
+git add *
 ```
 \
 Rebuild the system with the flake.
