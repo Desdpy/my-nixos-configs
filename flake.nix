@@ -38,7 +38,12 @@
       };
     in {
       nixosConfigurations = {
-        unwired = lib.nixosSystem {
+        wired = lib.nixosSystem {
+          inherit system;
+          inherit pkgs;
+          modules = [ ./hosts/wired/configuration.nix ];
+        };
+	unwired = lib.nixosSystem {
           inherit system;
           inherit pkgs;
           modules = [ ./hosts/unwired/configuration.nix ];

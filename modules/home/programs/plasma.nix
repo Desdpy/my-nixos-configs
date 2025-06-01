@@ -155,6 +155,7 @@
         widgets = [
           "org.kde.plasma.kickoff"
         ];
+        screen = "all";
       }
       {
         alignment = "left";
@@ -169,6 +170,7 @@
         widgets = [
           "org.kde.plasma.pager"
         ];
+        screen = "all";
       }
       {
         alignment = "center";
@@ -180,6 +182,7 @@
         widgets = [
           "org.kde.plasma.digitalclock"
         ];
+        screen = "all";
       }
       {
         alignment = "right";
@@ -191,6 +194,7 @@
         widgets = [
           "org.kde.plasma.systemtray"
         ];
+        screen = "all";
       }
     ];
 
@@ -248,13 +252,15 @@
       "kwinrc"."Plugins"."kwin4_effect_geometry_changeEnabled" = true;
 
       # Apps & Windows -> Window Management -> Desdktop Effects -> Rounded Corners
+      "kwinrc"."Round-Corners"."DisableOutlineTile" = false;
+      "kwinrc"."Round-Corners"."DisableRoundTile" = false;
       "kwinrc"."Round-Corners"."InactiveOutlineColor" = "46,50,68";
       "kwinrc"."Round-Corners"."InactiveOutlineThickness" = 2.5;
-      "kwinrc"."Round-Corners"."InactiveSecondOutlineColor" = "29,29,45";
+      "kwinrc"."Round-Corners"."InactiveSecondOutlineColor" = "32,34,51";
       "kwinrc"."Round-Corners"."InactiveSecondOutlineThickness" = 4.25;
       "kwinrc"."Round-Corners"."OutlineColor" = "201,157,230";
       "kwinrc"."Round-Corners"."OutlineThickness" = 2.5;
-      "kwinrc"."Round-Corners"."SecondOutlineColor" = "29,29,44";
+      "kwinrc"."Round-Corners"."SecondOutlineColor" = "32,34,51";
       "kwinrc"."Round-Corners"."SecondOutlineThickness" = 4.25;
 
       # Apps & Windows -> Default Applications -> Default Applications
