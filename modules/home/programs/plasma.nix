@@ -252,16 +252,18 @@
       "kwinrc"."Plugins"."kwin4_effect_geometry_changeEnabled" = true;
 
       # Apps & Windows -> Window Management -> Desdktop Effects -> Rounded Corners
+      "kwinrc"."Round-Corners"."ActiveOutlineAlpha" = 255;
       "kwinrc"."Round-Corners"."DisableOutlineTile" = false;
       "kwinrc"."Round-Corners"."DisableRoundTile" = false;
+      "kwinrc"."Round-Corners"."InactiveOutlineAlpha" = 0;
       "kwinrc"."Round-Corners"."InactiveOutlineColor" = "46,50,68";
-      "kwinrc"."Round-Corners"."InactiveOutlineThickness" = 2.5;
+      "kwinrc"."Round-Corners"."InactiveOutlineThickness" = 3;
       "kwinrc"."Round-Corners"."InactiveSecondOutlineColor" = "32,34,51";
-      "kwinrc"."Round-Corners"."InactiveSecondOutlineThickness" = 4.25;
-      "kwinrc"."Round-Corners"."OutlineColor" = "201,157,230";
-      "kwinrc"."Round-Corners"."OutlineThickness" = 2.5;
+      "kwinrc"."Round-Corners"."InactiveSecondOutlineThickness" = 3;
+      "kwinrc"."Round-Corners"."OutlineColor" = "155,121,177";
+      "kwinrc"."Round-Corners"."OutlineThickness" = 3;
       "kwinrc"."Round-Corners"."SecondOutlineColor" = "32,34,51";
-      "kwinrc"."Round-Corners"."SecondOutlineThickness" = 4.25;
+      "kwinrc"."Round-Corners"."SecondOutlineThickness" = 3;
 
       # Apps & Windows -> Default Applications -> Default Applications
       "kdeglobals"."General"."TerminalApplication" = "foot";
