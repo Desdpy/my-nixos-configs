@@ -255,7 +255,7 @@
       "kwinrc"."Round-Corners"."ActiveOutlineAlpha" = 255;
       "kwinrc"."Round-Corners"."DisableOutlineTile" = false;
       "kwinrc"."Round-Corners"."DisableRoundTile" = false;
-      "kwinrc"."Round-Corners"."InactiveOutlineAlpha" = 0;
+      "kwinrc"."Round-Corners"."InactiveOutlineAlpha" = 255;
       "kwinrc"."Round-Corners"."InactiveOutlineColor" = "46,50,68";
       "kwinrc"."Round-Corners"."InactiveOutlineThickness" = 3;
       "kwinrc"."Round-Corners"."InactiveSecondOutlineColor" = "32,34,51";
