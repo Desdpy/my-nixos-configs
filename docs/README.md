@@ -131,6 +131,12 @@ Rebuild the system with the flake.
 cd nix/
 sudo nixos-rebuild switch --flake .
 ```
+\
+Temporarily preinstall Home-Manager.
+```
+nix-shell -p home-manager
+```
+\
 Run home manager.
 ```
 home-manager switch --flake .
