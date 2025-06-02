@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> This is taken from here: https://github.com/orangci/walls-catppuccin-mocha
+> I take no credits for any of the pictures or the work that went into collecting them!
+
 # orangc's walls, catppuccin-mocha edition
 Hi! This is my repository of wallpapers which I've collected over the years. This is the catppuccin-mocha version; the normal repo is available [here](https://github.com/orangci/walls).
 
