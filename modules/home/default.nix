@@ -22,5 +22,6 @@
     ./programs/foot.nix
     ./programs/gnome-disk-utility.nix
     ./programs/skanpage.nix
+    ./programs/protonmail-desktop.nix
   ];
 }
