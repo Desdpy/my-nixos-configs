@@ -23,5 +23,6 @@
     ./programs/gnome-disk-utility.nix
     ./programs/skanpage.nix
     ./programs/protonmail-desktop.nix
+    ./programs/scrcpy.nix
   ];
 }

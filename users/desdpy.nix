@@ -3,7 +3,6 @@
     ../modules/home/programs/home-manager.nix   # Needed to us home manager!
     ../modules/home/default.nix
     ../modules/home/virtual-machines.nix
-    ../modules/home/file/yubico-desdpy.nix
   ];
 
   home = {
