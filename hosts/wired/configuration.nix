@@ -12,7 +12,6 @@
     ../../modules/nixos/virtual-machines.nix   # Add libvirtd to usergroups!
     ../../modules/nixos/hardware/bluetooth.nix # Add bluetooth functionality
     ../../modules/nixos/hardware/nvidia.nix   # Add nvidia drivers
-    ../../modules/nixos/swapDevices/16GiB.nix
     ../../modules/nixos/waydroid.nix
     ../../modules/nixos/gaming.nix
   ];

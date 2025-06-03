@@ -11,7 +11,6 @@
     ../../modules/nixos/yubikeys.nix   # Only use after creating ~/.config/Yubico/u2f_keys file! + indirectly locks root user :)
     ../../modules/nixos/virtual-machines.nix   # Add libvirtd to usergroups!
     ../../modules/nixos/hardware/bluetooth.nix
-    ../../modules/nixos/swapDevices/16GiB.nix
     ../../modules/nixos/waydroid.nix
   ];
 
