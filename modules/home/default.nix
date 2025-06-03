@@ -24,5 +24,6 @@
     ./programs/skanpage.nix
     ./programs/protonmail-desktop.nix
     ./programs/scrcpy.nix
+    ./programs/ksystemlog.nix
   ];
 }

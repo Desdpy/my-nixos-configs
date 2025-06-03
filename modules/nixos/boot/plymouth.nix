@@ -3,11 +3,11 @@
   boot = {
     plymouth = {
       enable = true;
-      theme = "colorful_sliced";
+      theme = "circle";
       themePackages = with pkgs; [
         # By default we would install all themes
         (adi1090x-plymouth-themes.override {
-          selected_themes = [ "colorful_sliced" ];
+          selected_themes = [ "circle" ];
         })
       ];
     };

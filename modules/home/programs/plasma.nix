@@ -247,6 +247,7 @@
       "kwinrc"."Script-krohnkite"."screenGapLeft" = 8;
       "kwinrc"."Script-krohnkite"."screenGapRight" = 8;
       "kwinrc"."Script-krohnkite"."screenGapTop" = 50;
+      "kwinrc"."Script-krohnkite"."screenDefaultLayout" = "DP-3:stackedlayout,DP-5:stackedlayout,:btreelayout";
 
       # Apps & Windows -> Window Management -> Desdktop Effects -> Geometry Change
       "kwinrc"."Plugins"."kwin4_effect_geometry_changeEnabled" = true;
