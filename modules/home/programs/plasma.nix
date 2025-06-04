@@ -15,6 +15,12 @@
 
     };
 
+    # Deskotp Context Menu -> Desktop and Wallpaper -> Mouse Actions
+    desktop.mouseActions = {
+      rightClick = "contextMenu";
+      middleClick = "switchWindow";
+    };
+
     # Input & Output -> Mouse & Touchpad -> Touchpad
     input.touchpads = [
       {
