@@ -45,17 +45,6 @@
       options = [ "subvol=nix" ];
     };
 
-  fileSystems."/home/desdpy/smb" =
-    { device = "//192.168.1.198/bilder_und_videos";
-      fsType = "cifs";
-      options = [ "credentials=/home/desdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
-    };
-
-  swapDevices = [ {
-    device = "/.swapvol/swapfile";
-    size = 16*1024;
-  } ];
-
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction

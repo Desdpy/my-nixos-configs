@@ -57,6 +57,13 @@
             plasma-manager.homeManagerModules.plasma-manager 
           ];
         };
+        WiredDesdpy = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          modules = [ 
+            ./users/WiredDesdpy.nix
+            plasma-manager.homeManagerModules.plasma-manager 
+          ];
+        };
       };
     };
 }

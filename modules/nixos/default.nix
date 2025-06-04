@@ -2,9 +2,6 @@
 
   imports = [
 
-    # users
-    ./users/desdpy.nix
-
     # boot
     ./boot/systemd-boot.nix
     ./boot/plymouth.nix

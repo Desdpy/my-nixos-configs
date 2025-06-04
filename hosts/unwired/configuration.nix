@@ -7,6 +7,8 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ../../modules/nixos/users/desdpy.nix
+    ../../modules/nixos/swapDevices/16gb.nix   # Add swap
     ../../modules/nixos/default.nix
     ../../modules/nixos/yubikeys.nix   # Only use after creating ~/.config/Yubico/u2f_keys file! + indirectly locks root user :)
     ../../modules/nixos/virtual-machines.nix   # Add libvirtd to usergroups!
