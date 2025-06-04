@@ -247,7 +247,7 @@
       "kwinrc"."Script-krohnkite"."screenGapLeft" = 8;
       "kwinrc"."Script-krohnkite"."screenGapRight" = 8;
       "kwinrc"."Script-krohnkite"."screenGapTop" = 50;
-      "kwinrc"."Script-krohnkite"."screenDefaultLayout" = "DP-3:stackedlayout,DP-5:stackedlayout,:btreelayout";
+      "kwinrc"."Script-krohnkite"."screenDefaultLayout" = "DP-3:stackedlayout,DP-5:stackedlayout,:quarterlayout";
 
       # Apps & Windows -> Window Management -> Desdktop Effects -> Geometry Change
       "kwinrc"."Plugins"."kwin4_effect_geometry_changeEnabled" = true;
@@ -258,11 +258,11 @@
       "kwinrc"."Round-Corners"."DisableRoundTile" = false;
       "kwinrc"."Round-Corners"."InactiveOutlineAlpha" = 255;
       "kwinrc"."Round-Corners"."InactiveOutlineColor" = "46,50,68";
-      "kwinrc"."Round-Corners"."InactiveOutlineThickness" = 3;
+      "kwinrc"."Round-Corners"."InactiveOutlineThickness" = 2.5;
       "kwinrc"."Round-Corners"."InactiveSecondOutlineColor" = "32,34,51";
       "kwinrc"."Round-Corners"."InactiveSecondOutlineThickness" = 3;
       "kwinrc"."Round-Corners"."OutlineColor" = "155,121,177";
-      "kwinrc"."Round-Corners"."OutlineThickness" = 3;
+      "kwinrc"."Round-Corners"."OutlineThickness" = 2.5;
       "kwinrc"."Round-Corners"."SecondOutlineColor" = "32,34,51";
       "kwinrc"."Round-Corners"."SecondOutlineThickness" = 3;
 
