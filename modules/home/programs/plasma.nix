@@ -168,13 +168,28 @@
         lengthMode = "custom";
         maxLength = 1000;
         minLength = 0;
-        offset = 52;
+        offset = 50;
         floating = true;
         height = 34;
         hiding = "dodgewindows";
         location = "top";
         widgets = [
           "org.kde.plasma.pager"
+        ];
+        screen = "all";
+      }
+      {
+        alignment = "left";
+        lengthMode = "custom";
+        maxLength = 1000;
+        minLength = 0;
+        offset = 120;
+        floating = true;
+        height = 34;
+        hiding = "dodgewindows";
+        location = "top";
+        widgets = [
+          "org.kde.plasma.windowlist"
         ];
         screen = "all";
       }

@@ -25,5 +25,6 @@
     ./programs/protonmail-desktop.nix
     ./programs/scrcpy.nix
     ./programs/ksystemlog.nix
+    ./programs/spotify.nix
   ];
 }
