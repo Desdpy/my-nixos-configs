@@ -9,9 +9,9 @@
     ./hardware-configuration.nix
     ../../modules/nixos/users/WiredDesdpy.nix
     ../../modules/nixos/swapDevices/16gb.nix   # Add swap
-    # ../../modules/nixos/fileSystems/local-nas-WiredDesdpy.nix   # Only use after creating ~/.smbcredentials
+    ../../modules/nixos/fileSystems/local-nas-WiredDesdpy.nix   # Only use after creating ~/.smbcredentials
     ../../modules/nixos/default.nix
-    # ../../modules/nixos/yubikeys.nix   # Only use after creating ~/.config/Yubico/u2f_keys file! + indirectly locks root user :)
+    ../../modules/nixos/yubikeys.nix   # Only use after creating ~/.config/Yubico/u2f_keys file! + indirectly locks root user :)
     ../../modules/nixos/virtual-machines.nix   # Add libvirtd to usergroups!
     ../../modules/nixos/hardware/bluetooth.nix # Add bluetooth functionality
     ../../modules/nixos/hardware/nvidia.nix   # Add nvidia drivers
