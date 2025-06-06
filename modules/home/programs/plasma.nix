@@ -61,9 +61,12 @@
         location = "top";
         widgets = [
           "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.kickoff"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.pager"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.digitalclock"
+          "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.mediacontroller"
         ];
@@ -124,12 +127,28 @@
         hiding = "dodgewindows";
         location = "top";
         widgets = [
+          "org.kde.plasma.kickoff"
+        ];
+        screen = "all";
+      }
+      {
+        alignment = "center";
+        lengthMode = "fit";
+        floating = true;
+        height = 34;
+        hiding = "dodgewindows";
+        location = "top";
+        widgets = [
+          "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.systemmonitor.cpu"
           "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
           "org.kde.plasma.systemmonitor.cpucore"
           "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
           "org.kde.plasma.systemmonitor.memory"
+          "org.kde.plasma.marginsseparator"
         ];
         screen = "all";
       }
@@ -173,9 +192,9 @@
         location = "top";
         widgets = [
           "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
           "org.kde.plasma.systemtray"
           "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.digitalclock"
         ];
         screen = "all";
       }
@@ -355,6 +374,12 @@
 
       # Disable browser integration reminder
       "kded5rc"."Module-browserintegrationreminder"."autoload" = false;
+
+      # Apps & Windows -> Notifications
+      "plasmanotifyrc"."Notifications"."PopupPosition" = "TopRight";
+
+      # Input % Output -> Sound Configure Volume Controls
+      "plasmaparc"."General"."RaiseMaximumVolume" = true;
       
     };
 
