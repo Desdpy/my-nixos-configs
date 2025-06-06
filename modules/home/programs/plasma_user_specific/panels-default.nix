@@ -36,7 +36,7 @@
         lengthMode = "custom";
         maxLength = 1000;
         minLength = 0;
-        offset = 129;
+        offset = 122;
         floating = true;
         height = 34;
         hiding = "dodgewindows";
