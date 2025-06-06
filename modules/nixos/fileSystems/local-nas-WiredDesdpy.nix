@@ -5,4 +5,6 @@
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
+
+  # Optional: Change Locations in KDE Plasma to the server and delete local directories
 }
