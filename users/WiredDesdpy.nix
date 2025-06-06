@@ -2,6 +2,7 @@
   imports = [
     ../modules/home/programs/home-manager.nix   # Needed to us home manager!
     ../modules/home/default.nix
+    ../modules/home/programs/plasma_user_specific/panels-WiredDesdpy.nix
     ../modules/home/virtual-machines.nix
   ];
 
