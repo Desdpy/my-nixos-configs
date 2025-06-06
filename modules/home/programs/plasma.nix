@@ -69,6 +69,7 @@
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.mediacontroller"
+          "org.kde.plasma.marginsseparator"
         ];
         screen = "all";
       }
@@ -371,6 +372,10 @@
       # Apps & Windows -> Default Applications -> Default Applications
       "kdeglobals"."General"."TerminalApplication" = "foot";
       "kdeglobals"."General"."TerminalService" = "foot.desktop";
+
+      # Dolphin -> Configure Dolphin... -> Interface -> Previews
+      "kdeglobals"."PreviewSettings"."EnableRemoteFolderThumbnail" = true;
+      "kdeglobals"."PreviewSettings"."MaximumRemoteSize" = 1048576000;
 
       # Disable browser integration reminder
       "kded5rc"."Module-browserintegrationreminder"."autoload" = false;
