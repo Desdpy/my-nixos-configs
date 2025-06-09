@@ -52,7 +52,7 @@
 
     # Panels
     panels = [
-      {
+      /* {
         floating = true;
         height = 34;
         hiding = "dodgewindows";
@@ -90,13 +90,13 @@
           "org.kde.plasma.marginsseparator"
         ];
         screen = "all";
-      }
-      /* {
+      } */
+      {
         alignment = "left";
         lengthMode = "fit";
         floating = true;
         height = 34;
-        # hiding = "dodgewindows";
+        hiding = "dodgewindows";
         location = "top";
         widgets = [
           "org.kde.plasma.marginsseparator"
@@ -111,7 +111,7 @@
           "org.kde.plasma.marginsseparator"
         ];
         # screen = "all";
-      } */
+      }
       /* {
         alignment = "left";
         lengthMode = "custom";
@@ -159,24 +159,24 @@
         ];
         screen = 1;
       } */
-      /* {
+      {
         alignment = "center";
         lengthMode = "fit";
         floating = true;
         height = 34;
-        # hiding = "dodgewindows";
+        hiding = "dodgewindows";
         location = "top";
         widgets = [
           "org.kde.plasma.kickoff"
         ];
-        # screen = "all";
+        screen = "all";
       }
       {
         alignment = "center";
         lengthMode = "fit";
         floating = true;
         height = 34;
-        # hiding = "dodgewindows";
+        hiding = "dodgewindows";
         location = "top";
         widgets = [
           "org.kde.plasma.marginsseparator"
@@ -190,8 +190,8 @@
           "org.kde.plasma.systemmonitor.memory"
           "org.kde.plasma.marginsseparator"
         ];
-        # screen = "all";
-      } */
+        screen = "all";
+      }
       /* {
         alignment = "left";
         lengthMode = "custom";
@@ -223,12 +223,12 @@
         ];
         screen = "all";
       } */
-      /* {
+      {
         alignment = "right";
         lengthMode = "fit";
         floating = true;
         height = 34;
-        # hiding = "dodgewindows";
+        hiding = "dodgewindows";
         location = "top";
         widgets = [
           "org.kde.plasma.marginsseparator"
@@ -236,8 +236,8 @@
           "org.kde.plasma.systemtray"
           "org.kde.plasma.marginsseparator"
         ];
-        # screen = "all";
-      } */
+        screen = "all";
+      }
     ];
 
     # Input & Output -> Keyboard -> Shortcuts
