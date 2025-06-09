@@ -110,7 +110,7 @@
           "org.kde.plasma.mediacontroller"
           "org.kde.plasma.marginsseparator"
         ];
-        # screen = "all";
+        screen = "all";
       }
       /* {
         alignment = "left";

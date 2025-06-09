@@ -39,4 +39,36 @@
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+
+  # Workaround so KDE plasmashell doesnt crash as often because of nofile running full through notifications :(
+  security.pam.loginLimits = [
+    {
+      domain = "*";
+      type = "soft";
+      item = "nofile";
+      value = "65535";
+    }
+    {
+      domain = "*";
+      type = "hard";
+      item = "nofile";
+      value = "524288";
+    }
+  ];
+
+  systemd.user.extraConfig = ''
+    DefaultLimitNOFILE=524288
+  '';
+  /* # This ensures PAM limits are loaded into the session properly
+  services.displayManager.sddm.settings = {
+    General = {
+      InputMethod = ""; # required to not override environment
+    };
+  };
+
+  # Export the limit explicitly to session (crucial!)
+  environment.extraInit = ''
+    ulimit -n 65535
+  ''; */
+  
 }
