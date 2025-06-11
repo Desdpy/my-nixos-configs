@@ -52,12 +52,12 @@
       domain = "*";
       type = "hard";
       item = "nofile";
-      value = "524288";
+      value = "65535";
     }
   ];
 
   systemd.user.extraConfig = ''
-    DefaultLimitNOFILE=524288
+    DefaultLimitNOFILE=65535
   '';
   /* # This ensures PAM limits are loaded into the session properly
   services.displayManager.sddm.settings = {
