@@ -250,7 +250,7 @@
           {
             name = "org.kde.plasma.weather";
             config = {
-              WeatherStation.source = "bbcukmet|weather|Washington DC, United States, US|4140963"; # Alternative: "noaa|weather|Washington/Dulles International Airport, DC, VA"
+              WeatherStation.source = "noaa|weather|College Park Airport, MD";
             };
           }
           {
