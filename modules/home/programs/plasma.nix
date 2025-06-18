@@ -51,6 +51,7 @@
     };
 
     # Panels
+    # check ~/.config/plasma-org.kde.plasma.desktop-appletsrc for values
     panels = [
       /* {
         floating = true;
@@ -104,20 +105,7 @@
           "org.kde.plasma.pager"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.digitalclock"
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.marginsseparator"
-          {
-            # check ~/.config/plasma-org.kde.plasma.desktop-appletsrc for values
-            name = "org.kde.plasma.weather";
-            config = {
-              pressureUnit=5008;
-              speedUnit=9000;
-              temperatureUnit=6001;
-              visibilityUnit=2007;
-              WeatherStation.source = "dwd|weather|Stuttgart-Echt.|10738";
-            };
-          }
+          "org.kde.plasma.windowlist"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.mediacontroller"
@@ -246,7 +234,47 @@
         widgets = [
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.systemtray"
+          {
+            systemTray.items = {
+              shown = [ ];
+              hidden = [
+                "org.kde.plasma.clipboard"
+                "org.kde.plasma.mediacontroller"
+                "org.kde.plasma.brightness"
+              ];
+            };
+          }
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          {
+            name = "org.kde.plasma.weather";
+            config = {
+              WeatherStation.source = "bbcukmet|weather|Washington DC, United States, US|4140963"; # Alternative: "noaa|weather|Washington/Dulles International Airport, DC, VA"
+            };
+          }
+          {
+            name = "org.kde.plasma.digitalclock";
+            config = {
+              Appearance = {
+                selectedTimeZones = "America/New_York";
+              };
+            };
+          }
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          {
+            name = "org.kde.plasma.weather";
+            config = {
+              pressureUnit=5008;
+              speedUnit=9000;
+              temperatureUnit=6001;
+              visibilityUnit=2007;
+              WeatherStation.source = "dwd|weather|Stuttgart-Echt.|10738";
+            };
+          }
+          "org.kde.plasma.digitalclock"
           "org.kde.plasma.marginsseparator"
         ];
         screen = "all";
