@@ -97,7 +97,7 @@
         floating = true;
         height = 34;
         hiding = "dodgewindows";
-        location = "top";
+        location = "bottom";
         widgets = [
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
@@ -105,6 +105,19 @@
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.digitalclock"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          {
+            # check ~/.config/plasma-org.kde.plasma.desktop-appletsrc for values
+            name = "org.kde.plasma.weather";
+            config = {
+              pressureUnit=5008;
+              speedUnit=9000;
+              temperatureUnit=6001;
+              visibilityUnit=2007;
+              WeatherStation.source = "dwd|weather|Stuttgart-Echt.|10738";
+            };
+          }
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.mediacontroller"
@@ -165,7 +178,7 @@
         floating = true;
         height = 34;
         hiding = "dodgewindows";
-        location = "top";
+        location = "bottom";
         widgets = [
           "org.kde.plasma.kickoff"
         ];
@@ -177,7 +190,7 @@
         floating = true;
         height = 34;
         hiding = "dodgewindows";
-        location = "top";
+        location = "bottom";
         widgets = [
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
@@ -229,7 +242,7 @@
         floating = true;
         height = 34;
         hiding = "dodgewindows";
-        location = "top";
+        location = "bottom";
         widgets = [
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
@@ -385,10 +398,10 @@
       # Apps & Windows -> Window Management -> KWin Scripts -> Krohnkite
       "kwinrc"."Plugins"."krohnkiteEnabled" = true;
       "kwinrc"."Script-krohnkite"."screenGapBetween" = 8;
-      "kwinrc"."Script-krohnkite"."screenGapBottom" = 8;
+      "kwinrc"."Script-krohnkite"."screenGapBottom" = 50;
       "kwinrc"."Script-krohnkite"."screenGapLeft" = 8;
       "kwinrc"."Script-krohnkite"."screenGapRight" = 8;
-      "kwinrc"."Script-krohnkite"."screenGapTop" = 50;
+      "kwinrc"."Script-krohnkite"."screenGapTop" = 8;
       "kwinrc"."Script-krohnkite"."screenDefaultLayout" = "DP-3:stackedlayout,DP-5:stackedlayout,:quarterlayout";
 
       # Apps & Windows -> Window Management -> Desdktop Effects -> Geometry Change
@@ -420,7 +433,7 @@
       "kded5rc"."Module-browserintegrationreminder"."autoload" = false;
 
       # Apps & Windows -> Notifications
-      "plasmanotifyrc"."Notifications"."PopupPosition" = "TopRight";
+      "plasmanotifyrc"."Notifications"."PopupPosition" = "BottomRight";
 
       # Input % Output -> Sound Configure Volume Controls
       "plasmaparc"."General"."RaiseMaximumVolume" = true;
