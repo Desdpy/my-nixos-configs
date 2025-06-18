@@ -317,7 +317,10 @@
       };
 
       # Input & Output -> Keyboard -> Shortcuts -> Add New
-      "services/foot.desktop"."_launch" = "Meta+T";
+      # "services/foot.desktop"."_launch" = "Meta+T";
+
+      # Input & Output -> Keyboard -> Shortcuts -> Applications -> Konsole
+      "services/org.kde.konsole.desktop"."_launch" = "Meta+T"; # Default: Ctrl+Alt+T
     };
 
     # System -> Session -> Desdktop Session

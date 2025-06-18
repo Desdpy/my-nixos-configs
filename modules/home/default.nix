@@ -3,6 +3,7 @@
 
     # programs
     ./programs/plasma.nix
+    ./programs/konsole.nix
     ./programs/krohnkite.nix
     ./programs/catppuccin-kde.nix
     ./programs/gtk.nix
@@ -19,7 +20,6 @@
     ./programs/xournalpp.nix
     ./programs/thunderbird.nix
     ./programs/protonmail-bridge-gui.nix
-    ./programs/foot.nix
     ./programs/gnome-disk-utility.nix
     ./programs/skanpage.nix
     ./programs/protonmail-desktop.nix
