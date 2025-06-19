@@ -63,6 +63,11 @@
         widgets = [
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.pager"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
           "org.kde.plasma.digitalclock"
           {
             name = "org.kde.plasma.weather";
@@ -209,10 +214,6 @@
               ];
             };
           }
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.pager"
           "org.kde.plasma.marginsseparator"
         ];
         screen = "all";
