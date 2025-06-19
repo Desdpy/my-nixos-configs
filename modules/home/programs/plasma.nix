@@ -88,6 +88,10 @@
           {
             name = "org.kde.plasma.weather";
             config = {
+              pressureUnit=5008;
+              speedUnit=9000;
+              temperatureUnit=6001;
+              visibilityUnit=2007;
               WeatherStation.source = "noaa|weather|College Park Airport, MD";
             };
           }
