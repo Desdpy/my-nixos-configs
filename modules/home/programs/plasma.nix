@@ -53,6 +53,92 @@
     # Panels
     # check ~/.config/plasma-org.kde.plasma.desktop-appletsrc for values
     panels = [
+
+      # Top left
+      {
+        alignment = "left";
+        lengthMode = "fit";
+        floating = true;
+        height = 200;
+        hiding = "dodgewindows";
+        location = "top";
+        widgets = [
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          {
+            name = "org.kde.plasma.systemmonitor.net";
+            config = {
+              Appearance = {
+                chartFace="org.kde.ksysguard.linechart";
+              };
+            };
+          }
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          {
+            name = "org.kde.plasma.systemmonitor.cpu";
+            config = {
+              Appearance = {
+                chartFace="org.kde.ksysguard.facegrid";
+              };
+            };
+          }
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+        ];
+        screen = "all";
+      }
+
+      # Top right
+      {
+        alignment = "right";
+        lengthMode = "fit";
+        floating = true;
+        height = 200;
+        hiding = "dodgewindows";
+        location = "top";
+        widgets = [
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          {
+            name = "org.kde.plasma.systemmonitor.memory";
+            config = {
+              Appearance = {
+                chartFace="org.kde.ksysguard.facegrid";
+              };
+            };
+          }
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          {
+            name = "org.kde.plasma.systemmonitor.diskactivity";
+            config = {
+              Appearance = {
+                chartFace="org.kde.ksysguard.linechart";
+              };
+            };
+          }
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+        ];
+        screen = "all";
+      }
+
+      # Top center
       {
         alignment = "center";
         lengthMode = "fit";
@@ -78,71 +164,8 @@
         ];
         screen = "all";
       }
-      {
-        alignment = "right";
-        lengthMode = "custom";
-        maxLength = 1000;
-        minLength = 0;
-        offset = 43;
-        floating = true;
-        height = 160;
-        hiding = "dodgewindows";
-        location = "left";
-        widgets = [
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.analogclock"
-        ];
-        screen = "all";
-      }
-      {
-        alignment = "left";
-        lengthMode = "fit";
-        floating = true;
-        height = 34;
-        hiding = "dodgewindows";
-        location = "bottom";
-        widgets = [
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.digitalclock"
-          {
-            name = "org.kde.plasma.weather";
-            config = {
-              pressureUnit=5008;
-              speedUnit=9000;
-              temperatureUnit=6001;
-              visibilityUnit=2007;
-              WeatherStation.source = "dwd|weather|Stuttgart-Echt.|10738";
-            };
-          }
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.marginsseparator"
-          {
-            name = "org.kde.plasma.digitalclock";
-            config = {
-              Appearance = {
-                selectedTimeZones = "America/New_York";
-              };
-            };
-          }
-          {
-            name = "org.kde.plasma.weather";
-            config = {
-              pressureUnit=5008;
-              speedUnit=9000;
-              temperatureUnit=6001;
-              visibilityUnit=2007;
-              WeatherStation.source = "noaa|weather|College Park Airport, MD";
-            };
-          }
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.timer"
-        ];
-        screen = "all";
-      }
+
+      # Bottom center behind
       {
         alignment = "center";
         lengthMode = "fit";
@@ -155,6 +178,8 @@
         ];
         screen = "all";
       }
+
+      # Bottom center
       {
         alignment = "center";
         lengthMode = "fit";
@@ -232,22 +257,59 @@
         ];
         screen = "all";
       }
+
+      # Bottom left
       {
-        alignment = "right";
-        lengthMode = "custom";
-        maxLength = 1000;
-        minLength = 0;
-        offset = 43;
+        alignment = "left";
+        lengthMode = "fit";
         floating = true;
-        height = 160;
+        height = 34;
         hiding = "dodgewindows";
-        location = "right";
+        location = "bottom";
         widgets = [
           "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.mediacontroller"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.digitalclock"
+          {
+            name = "org.kde.plasma.weather";
+            config = {
+              pressureUnit=5008;
+              speedUnit=9000;
+              temperatureUnit=6001;
+              visibilityUnit=2007;
+              WeatherStation.source = "dwd|weather|Stuttgart-Echt.|10738";
+            };
+          }
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          {
+            name = "org.kde.plasma.digitalclock";
+            config = {
+              Appearance = {
+                selectedTimeZones = "America/New_York";
+              };
+            };
+          }
+          {
+            name = "org.kde.plasma.weather";
+            config = {
+              pressureUnit=5008;
+              speedUnit=9000;
+              temperatureUnit=6001;
+              visibilityUnit=2007;
+              WeatherStation.source = "noaa|weather|College Park Airport, MD";
+            };
+          }
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.timer"
         ];
         screen = "all";
       }
+
+      # Bottom right
       {
         alignment = "right";
         lengthMode = "fit";
@@ -275,7 +337,42 @@
         screen = "all";
       }
 
+
       # Trying out stuff
+      # Left bottom
+      /* {
+        alignment = "right";
+        lengthMode = "custom";
+        maxLength = 1000;
+        minLength = 0;
+        offset = 43;
+        floating = true;
+        height = 160;
+        hiding = "dodgewindows";
+        location = "left";
+        widgets = [
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.analogclock"
+        ];
+        screen = "all";
+      } */
+      # Right bottom
+      /* {
+        alignment = "right";
+        lengthMode = "custom";
+        maxLength = 1000;
+        minLength = 0;
+        offset = 43;
+        floating = true;
+        height = 160;
+        hiding = "dodgewindows";
+        location = "right";
+        widgets = [
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.mediacontroller"
+        ];
+        screen = "all";
+      } */
    /* {
         floating = true;
         height = 34;
@@ -578,7 +675,7 @@
       "kded5rc"."Module-browserintegrationreminder"."autoload" = false;
 
       # Apps & Windows -> Notifications
-      "plasmanotifyrc"."Notifications"."PopupPosition" = "TopCenter";
+      "plasmanotifyrc"."Notifications"."PopupPosition" = "BottomRight";
 
       # Input % Output -> Sound Configure Volume Controls
       "plasmaparc"."General"."RaiseMaximumVolume" = true;
