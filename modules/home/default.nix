@@ -29,5 +29,6 @@
     ./programs/anki.nix
     ./programs/kcalc.nix
     ./programs/lsof.nix
+    ./programs/qtwebengine.nix
   ];
 }

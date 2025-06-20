@@ -16,10 +16,10 @@
     };
 
     # Deskotp Context Menu -> Desktop and Wallpaper -> Mouse Actions
-    desktop.mouseActions = {
+    /* desktop.mouseActions = {
       rightClick = "contextMenu";
       middleClick = "switchWindow";
-    };
+    }; */
 
     # Input & Output -> Mouse & Touchpad -> Touchpad
     input.touchpads = [
@@ -54,6 +54,47 @@
     # check ~/.config/plasma-org.kde.plasma.desktop-appletsrc for values
     panels = [
       {
+        alignment = "center";
+        lengthMode = "fit";
+        floating = true;
+        height = 40;
+        hiding = "dodgewindows";
+        location = "top";
+        widgets = [
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma_applet_dict"
+          "org.kde.plasma.marginsseparator"
+          {
+            name = "org.kde.plasma.icontasks";
+            config.General.launchers = [
+              "applications:org.kde.konsole.desktop"
+              "applications:org.kde.dolphin.desktop"
+              "applications:librewolf.desktop"
+              "applications:code.desktop"
+            ];
+            config.General.showOnlyCurrentDesktop = "false";
+          }
+        ];
+        screen = "all";
+      }
+      {
+        alignment = "right";
+        lengthMode = "custom";
+        maxLength = 1000;
+        minLength = 0;
+        offset = 43;
+        floating = true;
+        height = 160;
+        hiding = "dodgewindows";
+        location = "left";
+        widgets = [
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.analogclock"
+        ];
+        screen = "all";
+      }
+      {
         alignment = "left";
         lengthMode = "fit";
         floating = true;
@@ -61,11 +102,6 @@
         hiding = "dodgewindows";
         location = "bottom";
         widgets = [
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.pager"
-          "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.digitalclock"
@@ -102,6 +138,8 @@
           }
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.timer"
         ];
         screen = "all";
       }
@@ -196,6 +234,22 @@
       }
       {
         alignment = "right";
+        lengthMode = "custom";
+        maxLength = 1000;
+        minLength = 0;
+        offset = 43;
+        floating = true;
+        height = 160;
+        hiding = "dodgewindows";
+        location = "right";
+        widgets = [
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.mediacontroller"
+        ];
+        screen = "all";
+      }
+      {
+        alignment = "right";
         lengthMode = "fit";
         floating = true;
         height = 34;
@@ -213,6 +267,9 @@
               ];
             };
           }
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.pager"
           "org.kde.plasma.marginsseparator"
         ];
         screen = "all";
@@ -510,8 +567,8 @@
       "kwinrc"."Round-Corners"."SecondOutlineThickness" = 3;
 
       # Apps & Windows -> Default Applications -> Default Applications
-      "kdeglobals"."General"."TerminalApplication" = "foot";
-      "kdeglobals"."General"."TerminalService" = "foot.desktop";
+      # "kdeglobals"."General"."TerminalApplication" = "foot";
+      # "kdeglobals"."General"."TerminalService" = "foot.desktop";
 
       # Dolphin -> Configure Dolphin... -> Interface -> Previews
       "kdeglobals"."PreviewSettings"."EnableRemoteFolderThumbnail" = true;
@@ -521,7 +578,7 @@
       "kded5rc"."Module-browserintegrationreminder"."autoload" = false;
 
       # Apps & Windows -> Notifications
-      "plasmanotifyrc"."Notifications"."PopupPosition" = "BottomRight";
+      "plasmanotifyrc"."Notifications"."PopupPosition" = "TopCenter";
 
       # Input % Output -> Sound Configure Volume Controls
       "plasmaparc"."General"."RaiseMaximumVolume" = true;
