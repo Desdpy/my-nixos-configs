@@ -633,8 +633,9 @@
     configFile = {
 
       # Apps & Windows -> Window Management -> Window Behavior
-      "kwinrc"."Windows"."FocusPolicy" = "FocusUnderMouse";
-      "kwinrc"."Windows"."DelayFocusInterval" = 0;
+      "kwinrc"."Windows"."DelayFocusInterval" = 100;
+      "kwinrc"."Windows"."FocusPolicy" = "FocusFollowsMouse";
+      "kwinrc"."Windows"."NextFocusPrefersMouse" = true;
 
       # Apps & Windows -> Window Management -> KWin Scripts -> Krohnkite
       "kwinrc"."Plugins"."krohnkiteEnabled" = true;
