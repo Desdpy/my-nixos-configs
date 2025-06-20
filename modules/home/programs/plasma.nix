@@ -59,7 +59,7 @@
         alignment = "left";
         lengthMode = "fit";
         floating = true;
-        height = 200;
+        height = 180;
         hiding = "dodgewindows";
         location = "top";
         widgets = [
@@ -101,7 +101,7 @@
         alignment = "right";
         lengthMode = "fit";
         floating = true;
-        height = 200;
+        height = 180;
         hiding = "dodgewindows";
         location = "top";
         widgets = [
