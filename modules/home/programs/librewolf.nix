@@ -15,7 +15,6 @@
           "browser.startup.page" = 3;
         };
         extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
-          bitwarden
           darkreader
         ];
       };

@@ -26,9 +26,11 @@
     ./programs/scrcpy.nix
     ./programs/ksystemlog.nix
     ./programs/spotify.nix
-    ./programs/anki.nix
     ./programs/kcalc.nix
     ./programs/lsof.nix
     ./programs/qtwebengine.nix
+    ./programs/obsidian.nix
+    ./programs/anki.nix
+    ./programs/joplin-desktop.nix
   ];
 }
