@@ -51,7 +51,7 @@
     };
 
     # Panels
-    # check ~/.config/plasma-org.kde.plasma.desktop-appletsrc for values
+    # check ~/.config/plasma-org.kde.plasma.desktop-appletsrc or /run/current-system/sw/share/plasma/plasmoids/ for values
     panels = [
 
       # Top left
@@ -150,6 +150,9 @@
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma_applet_dict"
+          "org.kde.plasma.colorpicker"
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.marginsseparator"
           "org.kde.plasma.marginsseparator"
           {
             name = "org.kde.plasma.icontasks";
