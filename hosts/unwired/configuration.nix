@@ -14,6 +14,7 @@
     ../../modules/nixos/virtual-machines.nix   # Add libvirtd to usergroups!
     ../../modules/nixos/hardware/bluetooth.nix
     ../../modules/nixos/waydroid.nix
+    ../../modules/nixos/gaming.nix
   ];
 
   # Define your hostname.
