@@ -32,5 +32,6 @@
     ./programs/obsidian.nix
     ./programs/anki.nix
     ./programs/joplin-desktop.nix
+    ./programs/qpwgraph.nix
   ];
 }
