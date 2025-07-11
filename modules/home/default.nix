@@ -33,5 +33,6 @@
     ./programs/anki.nix
     ./programs/joplin-desktop.nix
     ./programs/qpwgraph.nix
+    ./programs/signal-desktop-bin.nix
   ];
 }
