@@ -667,6 +667,10 @@
       "kwinrc"."Round-Corners"."SecondOutlineThickness" = 3;
 
       # Apps & Windows -> Default Applications -> Default Applications
+      "mimeapps.list"."Added Associations"."x-scheme-handler/http" = "librewolf.desktop";
+      "mimeapps.list"."Added Associations"."x-scheme-handler/https" = "librewolf.desktop";
+      "mimeapps.list"."Default Applications"."x-scheme-handler/http" = "librewolf.desktop";
+      "mimeapps.list"."Default Applications"."x-scheme-handler/https" = "librewolf.desktop";
       # "kdeglobals"."General"."TerminalApplication" = "foot";
       # "kdeglobals"."General"."TerminalService" = "foot.desktop";
 
