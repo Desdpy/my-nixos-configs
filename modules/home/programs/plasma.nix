@@ -45,6 +45,7 @@
       text = ''
         protonvpn-app &
         protonmail-bridge-gui --no-window &
+        signal-desktop &
         qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Switch to Desktop 5" &
       '';
       runAlways = true;
