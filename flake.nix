@@ -12,6 +12,10 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixpkgs-xr = {
+      url = "github:nix-community/nixpkgs-xr";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     plasma-manager = {
       url = "github:nix-community/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,6 +27,7 @@
     nixpkgs, 
     home-manager, 
     nur,
+    nixpkgs-xr,
     plasma-manager, 
     ... 
   }:
@@ -32,9 +37,12 @@
       pkgs = import nixpkgs{
         inherit system;
         overlays = [ 
-          nur.overlays.default 
+          nur.overlays.default
+          nixpkgs-xr.overlays.default 
         ];
-        config.allowUnfree = true;
+        config = {
+          allowUnfree = true; 
+        };
       };
     in {
       nixosConfigurations = {

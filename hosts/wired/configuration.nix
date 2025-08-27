@@ -18,6 +18,7 @@
     ../../modules/nixos/hardware/nvidia.nix   # Add nvidia drivers
     ../../modules/nixos/waydroid.nix
     ../../modules/nixos/gaming.nix
+    ../../modules/nixos/virtual-reality.nix
   ];
 
   # Define your hostname.

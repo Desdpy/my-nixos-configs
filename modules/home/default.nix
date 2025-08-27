@@ -16,10 +16,8 @@
     ./programs/brave.nix
     ./programs/fastfetch.nix
     ./programs/tree.nix
-    ./programs/vesktop.nix
     ./programs/xournalpp.nix
     ./programs/thunderbird.nix
-    ./programs/protonmail-bridge-gui.nix
     ./programs/gnome-disk-utility.nix
     ./programs/skanpage.nix
     ./programs/protonmail-desktop.nix
@@ -29,10 +27,13 @@
     ./programs/kcalc.nix
     ./programs/lsof.nix
     ./programs/qtwebengine.nix
-    ./programs/obsidian.nix
     ./programs/anki.nix
     ./programs/joplin-desktop.nix
     ./programs/qpwgraph.nix
     ./programs/signal-desktop-bin.nix
+    ./programs/unityhub.nix
+    ./programs/vrc-get.nix
+    ./programs/discord.nix
+    ./programs/mpv.nix
   ];
 }
