@@ -43,7 +43,6 @@
     # System -> Autostart
     startup.startupScript."autostart" = {
       text = ''
-        protonvpn-app &
         signal-desktop &
         qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Switch to Desktop 5" &
       '';

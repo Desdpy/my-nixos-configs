@@ -12,7 +12,6 @@
     ./programs/bash.nix
     ./programs/git.nix
     ./programs/vscode.nix
-    ./programs/protonvpn-gui.nix
     ./programs/brave.nix
     ./programs/fastfetch.nix
     ./programs/tree.nix
@@ -35,5 +34,11 @@
     ./programs/vrc-get.nix
     ./programs/discord.nix
     ./programs/mpv.nix
+    ./programs/pdftk.nix
+    ./programs/gimp.nix
+    ./programs/libreoffice.nix
+    ./programs/vdhcoapp.nix
+    ./programs/trezor-suite.nix
+    ./programs/monero-gui.nix
   ];
 }

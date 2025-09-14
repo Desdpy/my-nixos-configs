@@ -21,9 +21,12 @@
     ./services/gnome-keyring.nix
     ./services/tailscale.nix
     ./services/printing.nix
+    ./services/trezord.nix
+    ./services/mullvad-vpn.nix
 
     # fonts
     ./fonts/nerdfonts.nix
+    ./fonts/nunito.nix
 
     # nix
     ./nix/garbage-collection.nix

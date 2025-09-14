@@ -8,10 +8,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     nixpkgs-xr = {
       url = "github:nix-community/nixpkgs-xr";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -25,8 +21,7 @@
 
   outputs = { 
     nixpkgs, 
-    home-manager, 
-    nur,
+    home-manager,
     nixpkgs-xr,
     plasma-manager, 
     ... 
@@ -36,8 +31,7 @@
       system = "x86_64-linux";
       pkgs = import nixpkgs{
         inherit system;
-        overlays = [ 
-          nur.overlays.default
+        overlays = [
           nixpkgs-xr.overlays.default 
         ];
         config = {
