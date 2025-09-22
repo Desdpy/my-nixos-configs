@@ -12,7 +12,7 @@
           "sidebar.main.tools" = "history";
           "sidebar.visibility" = "expand-on-hover";
           "browser.toolbars.bookmarks.visibility" = "never";
-          "browser.startup.page" = 3;
+          # "browser.startup.page" = 3;
         };
       };
     };
