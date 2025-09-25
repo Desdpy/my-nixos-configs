@@ -43,6 +43,7 @@
     # System -> Autostart
     startup.startupScript."autostart" = {
       text = ''
+        mullvad-vpn &
         plasma-apply-wallpaperimage $HOME/nix/wallpapers/walls-catppuccin-mocha/river-city.jpg &
         signal-desktop &
         qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Switch to Desktop 5" &
