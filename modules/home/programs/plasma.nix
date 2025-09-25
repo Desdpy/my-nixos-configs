@@ -11,7 +11,7 @@
       lookAndFeel = "Catppuccin-Frappe-Blue";
 
       # Appearance & Style -> Wallpaper
-      wallpaper = ../../../wallpapers/river-city.jpg;
+      # wallpaper = ../../../wallpapers/river-city.jpg;
 
     };
 
@@ -43,6 +43,7 @@
     # System -> Autostart
     startup.startupScript."autostart" = {
       text = ''
+        plasma-apply-wallpaperimage $HOME/nix/wallpapers/walls-catppuccin-mocha/river-city.jpg &
         signal-desktop &
         qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Switch to Desktop 5" &
       '';
