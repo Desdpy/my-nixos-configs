@@ -40,5 +40,6 @@
     ./programs/vdhcoapp.nix
     ./programs/trezor-suite.nix
     ./programs/monero-gui.nix
+    ./programs/tutanota-desktop.nix
   ];
 }
