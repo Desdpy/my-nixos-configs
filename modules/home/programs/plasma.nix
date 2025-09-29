@@ -11,7 +11,7 @@
       lookAndFeel = "Catppuccin-Frappe-Blue";
 
       # Appearance & Style -> Wallpaper
-      wallpaper = ../../../wallpapers/walls-catppuccin-mocha/river-city.jpg; # Also change in autostart script
+      # wallpaper = ../../../wallpapers/walls-catppuccin-mocha/river-city.jpg;
 
     };
 
@@ -44,7 +44,7 @@
     startup.startupScript."autostart" = {
       text = ''
         mullvad-vpn &
-        plasma-apply-wallpaperimage $HOME/nix/wallpapers/walls-catppuccin-mocha/river-city.jpg & # Also change in workspace settings
+        plasma-apply-wallpaperimage $HOME/nix/wallpapers/walls-catppuccin-mocha/river-city.jpg &
         signal-desktop &
         tutanota-desktop &
         qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Switch to Desktop 5" &
