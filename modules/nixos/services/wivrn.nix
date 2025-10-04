@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, ... }: {
 
   services.wivrn = {
     enable = true;
@@ -11,18 +11,6 @@
 
     # Run WiVRn as a systemd service on startup
     # autoStart = true;
-
-    /* package = (pkgs.monado.overrideAttrs {
-        pname = "monado-pimax"; # optional but helps distinguishing between packages
-
-        src = pkgs.fetchFromGitLab {
-            domain = "gitlab.freedesktop.org";
-            owner = "Coreforge";
-            repo = "monado";
-            rev = "f858ee5dd8ca7696bd9219e8278f2671df56fe6e";
-            hash = "sha256-Si56yvG+oSfyUaPAlF1FgB7WJo8td1xuVxYnkJvbu4o=";
-        };
-    }); */
 
     # Config for WiVRn (https://github.com/WiVRn/WiVRn/blob/master/docs/configuration.md)
     config = {
@@ -49,5 +37,6 @@
 
   environment.systemPackages = [
     pkgs.wlx-overlay-s
+    pkgs.slimevr
   ];
 }
