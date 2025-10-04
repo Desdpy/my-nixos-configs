@@ -19,7 +19,7 @@
       auth required ${pam_u2f} cue
     '');
 
-    # KDE (KScreenLocker) in needs password and Yubikey
+    # KDE (KScreenLocker) needs password and Yubikey
     security.pam.services.kde.text = pkgs.lib.mkDefault (pkgs.lib.mkBefore ''
       # Extra authentication management.
       auth required ${pam_unix}
