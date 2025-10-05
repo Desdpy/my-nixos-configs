@@ -7,9 +7,9 @@
     };
 
   fileSystems."/home/WiredDesdpy/SSD-1TB" =
-    { device = "/dev/disk/by-uuid/0567E72767CB2293";
-      fsType = "ntfs";
-      options = [ "uid=1000" "gid=100" "nofail" ];
+    { device = "/dev/disk/by-uuid/90ad11e4-dbee-477e-b24a-e9ec4c831190";
+      fsType = "ext4";
+      options = [ "nofail" ];
     };
 
   fileSystems."/home/WiredDesdpy/HDD-1TB" =
