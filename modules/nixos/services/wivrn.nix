@@ -35,6 +35,15 @@
     };
   }; 
 
+  environment.sessionVariables = lib.mkAfter {
+    WEBKIT_DISABLE_DMABUF_RENDERER = "1";
+  };
+
+  services.udev.extraRules = ''
+      SUBSYSTEM=="usb", ATTR{idVendor}=="1209", ATTR{idProduct}=="7690", MODE="0666"
+      KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="7690", MODE="0666"
+  '';
+
   environment.systemPackages = [
     pkgs.wlx-overlay-s
     pkgs.slimevr
