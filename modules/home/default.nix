@@ -12,7 +12,7 @@
     ./programs/bash.nix
     ./programs/git.nix
     ./programs/vscode.nix
-    ./programs/brave.nix
+    ./programs/chromium.nix
     ./programs/fastfetch.nix
     ./programs/tree.nix
     ./programs/xournalpp.nix
