@@ -12,6 +12,20 @@
     # Run WiVRn as a systemd service on startup
     # autoStart = true;
 
+    package = pkgs.wivrn.overrideAttrs (old: rec {  
+      version = "bdac7cafae07e8b7d9bd3a001bd81b81d63296e3";
+      src = pkgs.fetchFromGitHub {
+        owner = "notpeelz";
+        repo = "WiVRn";
+        rev = version;
+        # This will throw an error when evaluating and give you the correct hash - put that here
+        hash = "sha256-Xc2vPgYSSdtCfocNztQFyEkCH78FcFvxDeFc4KSWSLA=";
+      };
+      cmakeFlags = old.cmakeFlags ++ [
+        (lib.cmakeBool "WIVRN_FEATURE_SOLARXR" true)
+      ];
+    });
+
     # Config for WiVRn (https://github.com/WiVRn/WiVRn/blob/master/docs/configuration.md)
     config = {
       enable = true;
