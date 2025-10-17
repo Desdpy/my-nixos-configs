@@ -41,5 +41,6 @@
     ./programs/trezor-suite.nix
     ./programs/monero-gui.nix
     ./programs/tutanota-desktop.nix
+    ./programs/rustdesk-flutter.nix
   ];
 }
