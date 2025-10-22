@@ -47,6 +47,7 @@
         plasma-apply-wallpaperimage $HOME/nix/wallpapers/walls-catppuccin-mocha/river-city.jpg &
         signal-desktop &
         tutanota-desktop &
+        discord &
         qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Switch to Desktop 5" &
       '';
       runAlways = true;
