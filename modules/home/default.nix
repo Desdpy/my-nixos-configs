@@ -43,5 +43,6 @@
     ./programs/tutanota-desktop.nix
     ./programs/rustdesk-flutter.nix
     ./programs/audacity.nix
+    ./programs/fluent-reader.nix
   ];
 }
