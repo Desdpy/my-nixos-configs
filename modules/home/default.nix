@@ -44,5 +44,6 @@
     ./programs/rustdesk-flutter.nix
     ./programs/audacity.nix
     ./programs/fluent-reader.nix
+    ./programs/android-tools.nix
   ];
 }
