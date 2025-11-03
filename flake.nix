@@ -45,10 +45,15 @@
           inherit pkgs;
           modules = [ ./hosts/wired/configuration.nix ];
         };
-	unwired = lib.nixosSystem {
+	      unwired = lib.nixosSystem {
           inherit system;
           inherit pkgs;
           modules = [ ./hosts/unwired/configuration.nix ];
+        };
+	      docker = lib.nixosSystem {
+          inherit system;
+          inherit pkgs;
+          modules = [ ./hosts/docker/configuration.nix ];
         };
       };
       homeConfigurations = {
@@ -64,6 +69,12 @@
           modules = [ 
             ./users/WiredDesdpy.nix
             plasma-manager.homeModules.plasma-manager 
+          ];
+        };
+        DockerDesdpy = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          modules = [ 
+            ./users/DockerDesdpy.nix
           ];
         };
       };
