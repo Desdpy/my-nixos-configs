@@ -23,6 +23,7 @@
     ./services/printing.nix
     ./services/trezord.nix
     ./services/mullvad-vpn.nix
+    ./services/flatpak.nix
 
     # fonts
     ./fonts/nerdfonts.nix
