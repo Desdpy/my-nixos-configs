@@ -43,38 +43,38 @@
         wired = lib.nixosSystem {
           inherit system;
           inherit pkgs;
-          modules = [ ./hosts/wired/configuration.nix ];
+          modules = [ ./nixos/hosts/wired/configuration.nix ];
         };
 	      unwired = lib.nixosSystem {
           inherit system;
           inherit pkgs;
-          modules = [ ./hosts/unwired/configuration.nix ];
+          modules = [ ./nixos/hosts/unwired/configuration.nix ];
         };
 	      docker = lib.nixosSystem {
           inherit system;
           inherit pkgs;
-          modules = [ ./hosts/docker/configuration.nix ];
+          modules = [ ./nixos/hosts/docker/configuration.nix ];
         };
       };
       homeConfigurations = {
         desdpy = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [ 
-            ./users/desdpy.nix
+            ./home/users/desdpy.nix
             plasma-manager.homeModules.plasma-manager 
           ];
         };
         WiredDesdpy = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [ 
-            ./users/WiredDesdpy.nix
+            ./home/users/WiredDesdpy.nix
             plasma-manager.homeModules.plasma-manager 
           ];
         };
         DockerDesdpy = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [ 
-            ./users/DockerDesdpy.nix
+            ./home/users/DockerDesdpy.nix
           ];
         };
       };

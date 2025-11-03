@@ -1,4 +1,0 @@
-{ ... }: {
-
-  hardware.xone.enable = true;
-}

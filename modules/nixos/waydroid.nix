@@ -1,8 +1,0 @@
-{ ... }: {
-
-  imports = [
-
-    ./virtualisation/waydroid.nix
-
-  ];
-}
