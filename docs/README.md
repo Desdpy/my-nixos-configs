@@ -39,7 +39,7 @@ sudo dd if=/dev/urandom of=/dev/<name-of-drive> bs=4096 status=progress
 \
 Now we are getting the disko file to setup the partitions from github (make sure that you are connected with the internet):
 ```
-curl -OL https://raw.githubusercontent.com/DesolateDependency/my-nixos-configs/main/setup/disko.nix
+curl -OL https://raw.githubusercontent.com/Desdpy/my-nixos-configs/main/setup/disko.nix
 ```
 \
 Make adjustments to the file, like adjusting the drive name:
@@ -63,7 +63,7 @@ sudo nixos-generate-config --root /mnt
 Now we have to replace the automaticaly created configuration.nix file with our own.
 ```
 cd /mnt/etc/nixos/
-sudo curl -OL https://raw.githubusercontent.com/DesolateDependency/my-nixos-configs/main/setup/configuration.nix
+sudo curl -OL https://raw.githubusercontent.com/Desdpy/my-nixos-configs/main/setup/configuration.nix
 ```
 \
 Set a username and hostname that will be used in the later configuration:
@@ -102,7 +102,7 @@ ssh <username>@<ip>
 \
 Add your git name and email imperatively first. It will be declarative as soon as the config files get cloned.
 ```
-git config --global user.name "<name(DesolateDependency)>"
+git config --global user.name "<name(Desdpy)>"
 git config --global user.email "<email(github.com.passerby609@passfwd.com)>"
 ```
 \
@@ -123,7 +123,7 @@ Add the ssh key to your github account with a browser.
 Clone the dotfiles and nix configs.
 ```
 cd
-git clone git@github.com:DesolateDependency/my-nixos-configs.git nix
+git clone git@github.com:Desdpy/my-nixos-configs.git nix
 ```
 \
 Copy the hardware-configuration.nix file that was generated for this system into the .nixconfigs directory
