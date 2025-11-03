@@ -2,6 +2,7 @@
   imports = [
 
     # programs
+    ../modules/home/programs/home-manager.nix   # Needed to us home manager!
     ./programs/plasma.nix
     ./programs/konsole.nix
     ./programs/krohnkite.nix

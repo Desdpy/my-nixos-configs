@@ -1,15 +1,13 @@
 { config, pkgs, ... }: {
   imports = [
-    ../modules/home/desktop.nix
-    ../modules/home/virtual-machines.nix
-    ../modules/home/content-creation.nix
+    ../modules/home/server.nix
   ];
 
   home = {
     # Home Manager needs a bit of information about you and the paths it should
     # manage.
-    username = "WiredDesdpy";
-    homeDirectory = "/home/WiredDesdpy";
+    username = "DockerDesdpy";
+    homeDirectory = "/home/DockerDesdpy";
 
     # This value determines the Home Manager release that your configuration is
     # compatible with. This helps avoid breakage when a new Home Manager release

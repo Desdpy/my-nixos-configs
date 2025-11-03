@@ -7,22 +7,29 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../modules/nixos/users/WiredDesdpy.nix
-    ../../modules/nixos/desktop.nix
-    ../../modules/nixos/swapDevices/16gb.nix   # Add swap
-    ../../modules/nixos/fileSystems/extra-drives-WiredDesdpy.nix
-    ../../modules/nixos/fileSystems/local-nas-WiredDesdpy.nix   # Only use after creating ~/.smbcredentials
-    ../../modules/nixos/yubikeys.nix   # Only use after creating ~/.config/Yubico/u2f_keys file! + indirectly locks root user :)
-    ../../modules/nixos/virtual-machines.nix   # Add libvirtd to usergroups!
-    ../../modules/nixos/hardware/bluetooth.nix # Add bluetooth functionality
-    ../../modules/nixos/hardware/nvidia.nix   # Add nvidia drivers
-    ../../modules/nixos/waydroid.nix
-    ../../modules/nixos/gaming.nix
-    ../../modules/nixos/virtual-reality.nix
+    ../../modules/nixos/server.nix
   ];
 
+  # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.users.DockerDesdpy = {
+    isNormalUser = true;
+    extraGroups = [ 
+      "wheel" # Enable ‘sudo’ for the user.
+      "input" 
+      "networkmanager" 
+      "libvirtd" # Enable virtualisation for virt-manager
+      "scanner" # For scanning documents
+      "lp" # For printing documents
+    ]; 
+  };
+
+  swapDevices = [ {
+    device = "/.swapvol/swapfile";
+    size = 16*1024;
+  } ];
+
   # Define your hostname.
-  networking.hostName = "wired";
+  networking.hostName = "docker";
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
@@ -47,3 +54,4 @@
   system.stateVersion = "24.11"; # Did you read the comment?
 
 }
+

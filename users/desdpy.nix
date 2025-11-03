@@ -1,7 +1,6 @@
 { config, pkgs, ... }: {
   imports = [
-    ../modules/home/programs/home-manager.nix   # Needed to us home manager!
-    ../modules/home/default.nix
+    ../modules/home/desktop.nix
     ../modules/home/virtual-machines.nix
   ];
 
