@@ -3,6 +3,12 @@
 ## My NixOS Installation
 
 ### Preperation
+Set keyboard layout
+```
+loadkeys de-latin1
+```
+
+### Prepare ssh
 Set a password for the nixos user.
 ```
 passwd
