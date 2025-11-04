@@ -1,6 +1,14 @@
 { pkgs, ... }: {
 
-  # Use with home/virtual-machines.nix
+  environment.systemPackages = with pkgs; [
+    virt-manager
+    virt-viewer
+    win-virtio
+    spice
+    spice-gtk
+    spice-protocol
+    win-spice
+  ];
 
   virtualisation = {
     libvirtd = {

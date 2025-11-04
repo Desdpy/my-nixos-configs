@@ -1,15 +1,13 @@
 { config, pkgs, ... }: {
   imports = [
-    ../desktop.nix
-    ../virtual-machines.nix
-    ../content-creation.nix
+    ../base/desktop.nix
   ];
 
   home = {
     # Home Manager needs a bit of information about you and the paths it should
     # manage.
-    username = "WiredDesdpy";
-    homeDirectory = "/home/WiredDesdpy";
+    username = "desdpy";
+    homeDirectory = "/home/desdpy";
 
     # This value determines the Home Manager release that your configuration is
     # compatible with. This helps avoid breakage when a new Home Manager release

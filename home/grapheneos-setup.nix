@@ -7,3 +7,11 @@
 
   ];
 }
+
+{ pkgs, ... }: {
+
+  home.packages = with pkgs; [ 
+    android-udev-rules
+    chromium
+  ];
+}

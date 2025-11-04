@@ -1,14 +1,13 @@
 { config, pkgs, ... }: {
   imports = [
-    ../desktop.nix
-    ../virtual-machines.nix
+    ../base/server.nix
   ];
 
   home = {
     # Home Manager needs a bit of information about you and the paths it should
     # manage.
-    username = "desdpy";
-    homeDirectory = "/home/desdpy";
+    username = "DockerDesdpy";
+    homeDirectory = "/home/DockerDesdpy";
 
     # This value determines the Home Manager release that your configuration is
     # compatible with. This helps avoid breakage when a new Home Manager release

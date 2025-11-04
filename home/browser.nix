@@ -17,4 +17,9 @@
       };
     };
   };
+
+  home.packages = with pkgs; [ 
+    brave
+    chromium
+  ];
 }
