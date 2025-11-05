@@ -11,7 +11,7 @@
   ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.DockerDesdpy = {
+  users.users.SafeDesdpy = {
     isNormalUser = true;
     extraGroups = [ 
       "wheel" # Enable ‘sudo’ for the user.
@@ -29,7 +29,7 @@
   } ];
 
   # Define your hostname.
-  networking.hostName = "docker";
+  networking.hostName = "safe";
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";

@@ -50,10 +50,10 @@
           inherit pkgs;
           modules = [ ./nixos/00-hosts/unwired/configuration.nix ];
         };
-	      docker = lib.nixosSystem {
+	      safe = lib.nixosSystem {
           inherit system;
           inherit pkgs;
-          modules = [ ./nixos/00-hosts/docker/configuration.nix ];
+          modules = [ ./nixos/00-hosts/safe/configuration.nix ];
         };
       };
       homeConfigurations = {
@@ -71,10 +71,10 @@
             plasma-manager.homeModules.plasma-manager 
           ];
         };
-        DockerDesdpy = home-manager.lib.homeManagerConfiguration {
+        SafeDesdpy = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [ 
-            ./home/00-users/DockerDesdpy.nix
+            ./home/00-users/SafeDesdpy.nix
           ];
         };
       };
