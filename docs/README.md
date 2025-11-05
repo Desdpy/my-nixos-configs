@@ -5,7 +5,7 @@
 ### Preperation
 Set keyboard layout
 ```
-loadkeys de-latin1
+sudo loadkeys de-latin1
 ```
 
 ### Prepare ssh
