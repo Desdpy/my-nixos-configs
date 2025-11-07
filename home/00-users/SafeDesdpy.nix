@@ -6,8 +6,8 @@
   home = {
     # Home Manager needs a bit of information about you and the paths it should
     # manage.
-    username = "SafeDesdpy";
-    homeDirectory = "/home/SafeDesdpy";
+    username = "Nesdpy";
+    homeDirectory = "/home/Nesdpy";
 
     # This value determines the Home Manager release that your configuration is
     # compatible with. This helps avoid breakage when a new Home Manager release
