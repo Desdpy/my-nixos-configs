@@ -50,10 +50,10 @@
           inherit pkgs;
           modules = [ ./nixos/00-hosts/unwired/configuration.nix ];
         };
-	      docker-nest = lib.nixosSystem {
+	      docker-nast = lib.nixosSystem {
           inherit system;
           inherit pkgs;
-          modules = [ ./nixos/00-hosts/docker-nest/configuration.nix ];
+          modules = [ ./nixos/00-hosts/docker-nast/configuration.nix ];
         };
       };
       homeConfigurations = {
@@ -71,10 +71,10 @@
             plasma-manager.homeModules.plasma-manager 
           ];
         };
-        Nesdpy = home-manager.lib.homeManagerConfiguration {
+        Nastpy = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [ 
-            ./home/00-users/Nesdpy.nix
+            ./home/00-users/Nastpy.nix
           ];
         };
       };
