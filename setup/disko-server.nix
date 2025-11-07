@@ -4,7 +4,7 @@
         disk = { # ---------------------------------------------------------> all disks installed in the system like SSDs, HHDs,>
             main = { # -----------------------------------------------------> disk installed in a NVM Express port (name freely >
                 type = "disk"; # -------------------------------------------> marks "nvme0n1" as a disk
-                device = "/dev/sda"; # -----------------------------> path to the defined disk
+                device = "/dev/<name-of-drive>"; # -----------------------------> path to the defined disk
                 content = { # ----------------------------------------------> contains everything that should happen on this disk
                     type = "gpt"; # ----------------------------------------> partitioning style (GUID Partition Table [gpt] or >
                     partitions = { # ---------------------------------------> partitions created on this disk
