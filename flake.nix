@@ -55,6 +55,11 @@
           inherit pkgs;
           modules = [ ./nixos/00-hosts/docker-nast/configuration.nix ];
         };
+	      dazl = lib.nixosSystem {
+          inherit system;
+          inherit pkgs;
+          modules = [ ./nixos/00-hosts/dazl/configuration.nix ];
+        };
       };
       homeConfigurations = {
         desdpy = home-manager.lib.homeManagerConfiguration {
@@ -75,6 +80,12 @@
           inherit pkgs;
           modules = [ 
             ./home/00-users/Nastpy.nix
+          ];
+        };
+        Dazlpy = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          modules = [ 
+            ./home/00-users/Dazlpy.nix
           ];
         };
       };
