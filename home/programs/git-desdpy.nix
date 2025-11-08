@@ -1,6 +1,8 @@
 { config, pkgs, ... }: {
   programs.git = {
     enable = true;
+    userName = "Desdpy";
+    userEmail = "github.com.passerby609@passfwd.com";
     extraConfig = {
       init.defaultBranch = "main";
     };

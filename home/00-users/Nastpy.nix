@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
   imports = [
     ../base/server.nix
+    ../programs/git-desdpy.nix
   ];
 
   home = {

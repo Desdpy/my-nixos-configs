@@ -10,7 +10,7 @@
     ../programs/gtk.nix
     ../programs/kde-rounded-corners.nix
     ../programs/bash.nix
-    ../programs/git.nix
+    ../programs/git-desdpy.nix
     ../programs/vscode.nix
     ../programs/fastfetch.nix
     ../programs/tree.nix
