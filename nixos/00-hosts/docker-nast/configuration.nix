@@ -8,7 +8,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../base/server.nix
-    ../../docker-rootless.nix
+    ../../docker.nix
     ../../ssh.nix
   ];
 
@@ -18,10 +18,8 @@
     extraGroups = [ 
       "wheel" # Enable ‘sudo’ for the user.
       "input" 
-      "networkmanager" 
-      "libvirtd" # Enable virtualisation for virt-manager
-      "scanner" # For scanning documents
-      "lp" # For printing documents
+      "networkmanager"
+      "docker"
     ]; 
   };
 

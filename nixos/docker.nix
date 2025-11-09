@@ -3,10 +3,8 @@
   virtualisation.docker = {
     enable = true;
     storageDriver = "btrfs";
-    rootless = {
-      enable = true;
-      setSocketVariable = true;
-    };
   };
+
+  # Don't forget to add user to "docker group"
 
 }

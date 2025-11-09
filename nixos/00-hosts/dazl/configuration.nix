@@ -8,7 +8,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../base/server.nix
-    ../../docker-rootless.nix
+    ../../docker.nix
   ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -17,10 +17,8 @@
     extraGroups = [ 
       "wheel" # Enable ‘sudo’ for the user.
       "input" 
-      "networkmanager" 
-      "libvirtd" # Enable virtualisation for virt-manager
-      "scanner" # For scanning documents
-      "lp" # For printing documents
+      "networkmanager"
+      "docker"
     ]; 
   };
 
