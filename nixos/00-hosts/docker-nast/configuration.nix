@@ -28,8 +28,19 @@
     size = 16*1024;
   } ];
 
-  # Define your hostname.
-  networking.hostName = "docker-nast";
+  networking = {
+    hostName = "docker-nast";
+    interfaces.ens3 = {
+      ipv4.addresses = [{
+        address = "10.1.1.10";
+        prefixLength = 24;
+      }];
+    };
+    defaultGateway = {
+      address = "10.1.1.1";
+      interface = "ens18";
+    };
+  };
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
