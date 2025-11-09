@@ -30,7 +30,7 @@
 
   networking = {
     hostName = "docker-nast";
-    interfaces.ens3 = {
+    interfaces.ens18 = {
       ipv4.addresses = [{
         address = "10.1.1.10";
         prefixLength = 24;
