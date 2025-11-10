@@ -130,12 +130,12 @@ Copy the hardware-configuration.nix file that was generated for this system into
 ```
 mkdir ~/nix/nixos/00-hosts/<host-name>/
 cp /etc/nixos/hardware-configuration.nix ~/nix/nixos/00-hosts/<host-name>/
+cd nix/
 git add *
 ```
 \
 Rebuild the system with the flake.
 ```
-cd nix/
 sudo nixos-rebuild switch --flake .
 ```
 \
