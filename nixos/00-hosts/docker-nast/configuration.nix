@@ -19,7 +19,7 @@
       "wheel" # Enable ‘sudo’ for the user.
       "input" 
       "networkmanager"
-      "docker"
+      "docker" # Needed to use docker in root mode
     ]; 
   };
 
