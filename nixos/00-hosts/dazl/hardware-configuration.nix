@@ -8,37 +8,37 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "xhci_pci" "ehci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "xhci_pci" "ehci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" "sr_mod" "sdhci_pci" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/fd67e2a8-64b5-4c96-ab0b-68ed2111165e";
+    { device = "/dev/disk/by-uuid/3dc712b8-9ef4-42b1-a935-1d9fa87a2df0";
       fsType = "btrfs";
       options = [ "subvol=root" ];
     };
 
   fileSystems."/.swapvol" =
-    { device = "/dev/disk/by-uuid/fd67e2a8-64b5-4c96-ab0b-68ed2111165e";
+    { device = "/dev/disk/by-uuid/3dc712b8-9ef4-42b1-a935-1d9fa87a2df0";
       fsType = "btrfs";
       options = [ "subvol=swap" ];
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/235B-DF1A";
+    { device = "/dev/disk/by-uuid/C148-6854";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/fd67e2a8-64b5-4c96-ab0b-68ed2111165e";
+    { device = "/dev/disk/by-uuid/3dc712b8-9ef4-42b1-a935-1d9fa87a2df0";
       fsType = "btrfs";
       options = [ "subvol=home" ];
     };
 
   fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/fd67e2a8-64b5-4c96-ab0b-68ed2111165e";
+    { device = "/dev/disk/by-uuid/3dc712b8-9ef4-42b1-a935-1d9fa87a2df0";
       fsType = "btrfs";
       options = [ "subvol=nix" ];
     };
@@ -51,6 +51,7 @@
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.eno1.useDHCP = lib.mkDefault true;
+  # networking.interfaces.wlp3s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
