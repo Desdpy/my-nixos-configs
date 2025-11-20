@@ -11,7 +11,7 @@
           "sidebar.verticalTabs" = true;
           "sidebar.main.tools" = "history";
           "browser.toolbars.bookmarks.visibility" = "never";
-          # "sidebar.visibility" = "expand-on-hover";
+          "sidebar.visibility" = "always-show";
           # "browser.startup.page" = 3;
         };
       };

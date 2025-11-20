@@ -45,6 +45,98 @@
       options = [ "subvol=nix" ];
     };
 
+
+
+  fileSystems."/home/WiredDesdpy/SSD-240GB" =
+    { device = "/dev/disk/by-uuid/6437da46-dfec-45f9-bd3d-54f6da48461a";
+      fsType = "ext4";
+      options = [ "nofail" ];
+    };
+
+
+  # Create ~/.smbcredentials first
+  fileSystems."/home/WiredDesdpy/TrueNAS/Sascha" =
+    { device = "//10.10.20.20/Sascha";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+  fileSystems."/home/WiredDesdpy/TrueNAS/Aireen" =
+    { device = "//10.10.20.20/Aireen";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+  fileSystems."/home/WiredDesdpy/TrueNAS/Nanay" =
+    { device = "//10.10.20.20/Nanay";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+  fileSystems."/home/WiredDesdpy/TrueNAS/Familienfotos_und_videos" =
+    { device = "//10.10.20.20/Familienfotos_und_videos";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+  fileSystems."/home/WiredDesdpy/TrueNAS/Database" =
+    { device = "//10.10.20.20/Database";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+
+
+  fileSystems."/home/WiredDesdpy/Desktop" =
+    { device = "//10.10.20.20/Sascha/Desktop";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+  fileSystems."/home/WiredDesdpy/Documents" =
+    { device = "//10.10.20.20/Sascha/Documents";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+    
+  fileSystems."/home/WiredDesdpy/Downloads" =
+    { device = "//10.10.20.20/Sascha/Downloads";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+  fileSystems."/home/WiredDesdpy/Music" =
+    { device = "//10.10.20.20/Sascha/Music";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+  fileSystems."/home/WiredDesdpy/Pictures" =
+    { device = "//10.10.20.20/Sascha/Pictures";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+  fileSystems."/home/WiredDesdpy/Videos" =
+    { device = "//10.10.20.20/Sascha/Videos";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+  fileSystems."/home/WiredDesdpy/Public" =
+    { device = "//10.10.20.20/Sascha/Public";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+  fileSystems."/home/WiredDesdpy/Templates" =
+    { device = "//10.10.20.20/Sascha/Templates";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+  # Optional: Change Locations in KDE Plasma to the server and delete local directories
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking

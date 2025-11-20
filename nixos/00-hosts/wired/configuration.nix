@@ -41,20 +41,6 @@
     size = 16*1024;
   } ];
 
-  fileSystems."/home/WiredDesdpy/SSD-240GB" =
-  { device = "/dev/disk/by-uuid/6437da46-dfec-45f9-bd3d-54f6da48461a";
-    fsType = "ext4";
-    options = [ "nofail" ];
-  };
-
-  fileSystems."/home/WiredDesdpy/smb" =
-  { device = "//10.1.1.198/bilder_und_videos";
-    fsType = "cifs";
-    options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
-  };
-  # Create ~/.smbcredentials first
-  # Optional: Change Locations in KDE Plasma to the server and delete local directories
-
   # Define your hostname.
   networking.hostName = "wired";
 
